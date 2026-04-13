@@ -16,6 +16,30 @@
 - 多批次测试证据自动分类导入
 - 证据自动绑定至目标控制项
 
+
+
+## 系统架构
+
+```mermaid
+flowchart LR
+    A[Evidence Input] --> B[Validator Agent]
+    B --> C[Classifier Agent]
+    C --> D[Import Agent]
+    D --> E[PreAudit Agent]
+    E --> F[Aggregate Report]
+
+    C --> G[CISO Assistant API]
+    D --> G
+    E --> H[Single-file Remediation]
+    F --> I[Batch Remediation Report]
+
+    C --> J[Ollama / Local LLM]
+    E --> J
+
+    E --> K[Human Review]
+    F --> K
+```
+
 ## 项目简介
 
 本项目面向等保/合规审计场景，尝试将传统依赖人工完成的证据整理、分类、导入与初审流程进行自动化拆分与编排，形成一个可运行的多角色处理闭环。
@@ -241,6 +265,23 @@ python -m app.main --assessment-id "your-assessment-id"
 - 建议补充文件
 - 优先级建议
 - 预计提分区间
+
+
+## 示例截图
+
+### 1. 证据导入与控制项关联结果
+
+![Import Result](docs/screenshots/import_result.png)
+
+### 2. 批量处理结果
+
+![Summary Result](docs/screenshots/summary_result.png)
+
+### 3. 整改建议总报告
+
+![Remediation Report](docs/screenshots/remediation_report.png)
+
+
 
 ## 项目效果
 
