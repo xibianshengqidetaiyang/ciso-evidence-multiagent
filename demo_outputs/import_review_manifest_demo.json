@@ -1,0 +1,90 @@
+[
+  {
+    "file_name": "employee_handbook_demo.md",
+    "status": "auto_import",
+    "confidence": 0.81,
+    "candidate_targets": [
+      {
+        "target_label": "2.1.3（must）",
+        "score": 0.81,
+        "reason": "staff awareness and training evidence matched"
+      },
+      {
+        "target_label": "2.1.2（must）",
+        "score": 0.78,
+        "reason": "employee policy commitment evidence matched"
+      }
+    ],
+    "import_result": {
+      "applied": false,
+      "mode": "dry_run",
+      "message": "Demo dry-run only. No real CISO Assistant data was modified."
+    }
+  },
+  {
+    "file_name": "asset_classification_demo.md",
+    "status": "auto_import",
+    "confidence": 0.84,
+    "candidate_targets": [
+      {
+        "target_label": "1.3.1（must）",
+        "score": 0.84,
+        "reason": "asset inventory evidence matched"
+      },
+      {
+        "target_label": "1.3.2（must）",
+        "score": 0.80,
+        "reason": "asset classification evidence matched"
+      }
+    ],
+    "import_result": {
+      "applied": false,
+      "mode": "dry_run",
+      "message": "Demo dry-run only. No real CISO Assistant data was modified."
+    }
+  },
+  {
+    "file_name": "access_log_review_demo.csv",
+    "status": "candidate_review",
+    "confidence": 0.67,
+    "candidate_targets": [
+      {
+        "target_label": "5.2.4（must）",
+        "score": 0.67,
+        "reason": "log review record evidence matched"
+      },
+      {
+        "target_label": "4.1.3（must）",
+        "score": 0.58,
+        "reason": "account review evidence partially matched"
+      }
+    ],
+    "import_result": {
+      "applied": false,
+      "mode": "dry_run",
+      "message": "Demo dry-run only. Human review recommended."
+    }
+  },
+  {
+    "file_name": "incident_report_demo.md",
+    "status": "candidate_review",
+    "confidence": 0.69,
+    "candidate_targets": [
+      {
+        "target_label": "1.6.2（must）",
+        "score": 0.69,
+        "reason": "incident handling record evidence matched"
+      },
+      {
+        "target_label": "9.6.2（must）",
+        "score": 0.61,
+        "reason": "data protection incident handling evidence partially matched"
+      }
+    ],
+    "import_result": {
+      "applied": false,
+      "mode": "dry_run",
+      "message": "Demo dry-run only. Human review recommended."
+    }
+  }
+]
