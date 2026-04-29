@@ -37,3 +37,8 @@ debug_*.json
 Thumbs.db
 .vscode/
 .idea/
+
+
+!demo_data/
+!demo_data/input/
+!demo_data/input/**

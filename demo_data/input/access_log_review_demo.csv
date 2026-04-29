@@ -1,0 +1,6 @@
+date,system,reviewer,result,remark
+2026-01-01,VPN,security_admin,passed,no abnormal access detected
+2026-01-02,AD,security_admin,passed,inactive accounts reviewed
+2026-01-03,ERP,system_owner,follow_up_required,one dormant account identified
+2026-01-04,Firewall,network_admin,passed,no suspicious management login
+2026-01-05,Database,dba,passed,privileged access reviewed
